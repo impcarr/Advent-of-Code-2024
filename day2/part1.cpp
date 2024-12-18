@@ -28,7 +28,7 @@ bool is_safe(const vector<int> &row) {
 }
 
 int main () {
-    vector<vector<int>> data = read_lines_as_vec("input2.txt");
+    vector<vector<int>> data = read_lines_as_vec<int>("input2.txt");
     int safe_count = 0;
     for (const vector<int>& row : data) {
         if(is_safe(row)){
